@@ -94,3 +94,32 @@ curl --location 'https://clob.polymarket.com/markets/{condition id}'
 ```
 
 \*\*Check `watcher/watcher.go` to see how to parse the incoming events
+
+
+## Docker
+
+### Build
+To build the Docker image:
+
+
+⌘K to generate a command
+@Codebase Add a section in Readme.md on how to build a docker file and run it
+
+I'll help you add a Docker section to the README.md. Based on the provided code, I can see there's already a Dockerfile and the project structure.
+Add this section after the "How to run" section in the README.md (after line 8):
+## Docker
+
+### Build
+To build the Docker image:
+
+```bash
+docker build -t market-events .
+```
+
+
+### Run
+To run the container:
+```bash
+docker run market-events
+
+```
